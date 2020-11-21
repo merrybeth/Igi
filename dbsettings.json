@@ -1,0 +1,7 @@
+﻿{
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Database=Shop; Uid=root;Pwd=ei7veeChu4bo!; Encrypt=true; Trusted_Connection=True;MultipleActiveResultSets=true"
+        
+        
+    }
+}

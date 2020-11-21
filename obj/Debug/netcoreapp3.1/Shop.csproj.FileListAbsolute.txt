@@ -1,0 +1,129 @@
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.exe
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.deps.json
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.runtimeconfig.json
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.runtimeconfig.dev.json
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.pdb
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.csprojAssemblyReference.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfoInputs.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfo.cs
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.CoreCompileInputs.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.MvcApplicationPartsAssemblyInfo.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorTargetAssemblyInfo.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\staticwebassets\Shop.StaticWebAssets.Manifest.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\staticwebassets\Shop.StaticWebAssets.xml
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.pdb
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.genruntimeconfig.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.Views.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.Views.pdb
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorAssemblyInfo.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorAssemblyInfo.cs
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.input.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.output.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorCoreGenerate.cache
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Books\List.cshtml.g.cs
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorTargetAssemblyInfo.cs
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.Views.pdb
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.CopyComplete
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\dbsettings.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.exe
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.deps.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.runtimeconfig.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.runtimeconfig.dev.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.Views.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.Views.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Json.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.Mvc.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\dotnet-ef.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.csprojAssemblyReference.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfoInputs.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.AssemblyInfo.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.CoreCompileInputs.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.MvcApplicationPartsAssemblyInfo.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorAssemblyInfo.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorAssemblyInfo.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.input.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.output.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorCoreGenerate.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Books\List.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorTargetAssemblyInfo.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorTargetAssemblyInfo.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.Views.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.csproj.CopyComplete
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\staticwebassets\Shop.StaticWebAssets.Manifest.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\staticwebassets\Shop.StaticWebAssets.xml
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.pdb
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.genruntimeconfig.cache
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll

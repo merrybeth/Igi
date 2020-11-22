@@ -19,8 +19,15 @@ using Shop.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "D:\Univercity\3cours\5sem\igi\Shop\Shop\Views\_ViewImports.cshtml"
+using Shop.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ec1f5bbabaa1c49f816aa853a5f923e8589f9a88", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8698b1ec29562463bc33480ac52eac0346944c13", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0eff41647092edc7ecda8ef80749071d3709e51b", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -49,7 +56,7 @@ using Shop.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec1f5bbabaa1c49f816aa853a5f923e8589f9a883049", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec1f5bbabaa1c49f816aa853a5f923e8589f9a883220", async() => {
                 WriteLiteral("\r\n    <title>");
 #nullable restore
 #line 5 "D:\Univercity\3cours\5sem\igi\Shop\Shop\Views\Shared\_Layout.cshtml"
@@ -71,7 +78,7 @@ using Shop.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec1f5bbabaa1c49f816aa853a5f923e8589f9a884384", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec1f5bbabaa1c49f816aa853a5f923e8589f9a884555", async() => {
                 WriteLiteral(@"
 <header>
   <nav class=""navbar navbar-expand-md navbar-dark fixed-top bg-dark"">

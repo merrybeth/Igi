@@ -2,15 +2,9 @@
 <h3>@Model.CurrCategory </h3>
 <div class="row mt-5 mb-2">
 @{
-    foreach (var book in Model.AllBooks)
+    foreach (Book book in Model.AllBooks)
     {
-        <div class="col-lg-4">
-            <img class="img-thumbnail" src="@book.Image" alt="@book.Name"/>
-            <h2> Модель: @book.Name</h2>
-            <p>@book.ShortDescription</p>
-            <p>Цена: @book.Price.ToString("c")</p>
-            <p><a class="btn btn-warning" href="#">Подробнее</a></p>
-        </div>
+        @Html.Partial("AllBooks", book)
     }
 }
 </div>

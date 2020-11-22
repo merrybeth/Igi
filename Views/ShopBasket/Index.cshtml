@@ -1,0 +1,13 @@
+﻿@model ShopBasketViwModel
+
+<div class="container">
+    @foreach (var el in Model.shopBasket.ListShopItems)
+    {
+        <div class="alert alert-warning mt-3">
+            <b> Книги:</b> @el.Book.Name<br />
+            <b>Цена:</b> @el.Book.Price.ToString("c")
+        </div>
+    }
+    <hr/>
+    <div class="btn btn-danger" asp-controller="Order">Оплатить</div>
+</div>

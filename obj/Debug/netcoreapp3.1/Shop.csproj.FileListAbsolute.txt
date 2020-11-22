@@ -42,7 +42,6 @@ D:\Univercity\3 cours\5 sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\_V
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\dbsettings.json
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.exe
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.deps.json
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Shop.runtimeconfig.json
@@ -127,3 +126,6 @@ D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.pdb
 D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.genruntimeconfig.cache
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllBooks.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\dbsettings.json
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\ShopBasket\Index.cshtml.g.cs

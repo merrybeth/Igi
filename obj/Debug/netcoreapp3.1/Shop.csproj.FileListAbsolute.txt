@@ -129,3 +129,4 @@ D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Pomelo.EntityFra
 D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllBooks.cshtml.g.cs
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\dbsettings.json
 D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\ShopBasket\Index.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs

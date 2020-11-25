@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing.Template;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -52,7 +54,13 @@ namespace Shop
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(name: "categoryFilter", template: "Book/{action}/{category?}",
+                    defaults: new {Controller = "Book", action = "List"});
+            });
             using (var scope=app.ApplicationServices.CreateScope())
             {
                 AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();

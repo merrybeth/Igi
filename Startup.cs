@@ -12,7 +12,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Shop.Data;
 using Shop.Data.Interfaces;
-using Shop.Data.mocks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Shop.Data.Repository;
@@ -37,6 +36,7 @@ namespace Shop
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddTransient<IAllBooks, BookRepository>();
             services.AddTransient<IBooksCategory, CategoryRepository>();
+            services.AddTransient<IAllOrders, OrdersRepository>();
             services.AddDbContext<AppDBContent>(options => options.UseMySql("server=localhost;user=root;password=ei7veeChu4bo!;database=Shop;", 
                 new MySqlServerVersion(new Version(8, 0, 22))));
             services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();

@@ -1,5 +1,5 @@
-﻿using Shop.Migrations;
-using ShopBasket = Shop.Data.Models.ShopBasket;
+﻿using ShopBasket = Shop.Data.Models.ShopBasket;
+
 namespace Shop.ViewModels
 {
     public class ShopBasketViwModel

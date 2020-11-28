@@ -17,10 +17,39 @@ namespace Shop.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
+            modelBuilder.Entity("Shop.Data.Models.Author", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("DateOfBirth")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("DateOfDeath")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("LifeDescription")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Surname")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Author");
+                });
+
             modelBuilder.Entity("Shop.Data.Models.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("AuthorId")
                         .HasColumnType("int");
 
                     b.Property<bool>("Available")
@@ -48,6 +77,8 @@ namespace Shop.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
 
                     b.HasIndex("CategoryId");
 
@@ -78,22 +109,32 @@ namespace Shop.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Adress")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasMaxLength(35)
+                        .HasColumnType("varchar(35) CHARACTER SET utf8mb4");
 
                     b.Property<string>("Email")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("varchar(25) CHARACTER SET utf8mb4");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("varchar(25) CHARACTER SET utf8mb4");
 
                     b.Property<DateTime>("OrderTime")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Phone")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15) CHARACTER SET utf8mb4");
 
                     b.Property<string>("Surname")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("varchar(25) CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
 
@@ -148,11 +189,19 @@ namespace Shop.Migrations
 
             modelBuilder.Entity("Shop.Data.Models.Book", b =>
                 {
+                    b.HasOne("Shop.Data.Models.Author", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Shop.Data.Models.Category", "Category")
                         .WithMany("Books")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Author");
 
                     b.Navigation("Category");
                 });

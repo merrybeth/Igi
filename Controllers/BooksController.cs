@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
@@ -9,7 +8,7 @@ using Shop.ViewModels;
 
 namespace Shop.Controllers
 {
-    public class BooksController:Controller
+    public class BooksController : Controller
     {
         private readonly IAllBooks _allBooks;
         private readonly IBooksCategory _allCategories;
@@ -24,9 +23,9 @@ namespace Shop.Controllers
         [Route("Books/List/{category}")]
         public ViewResult List(string category)
         {
-            string _category = category;
-            IEnumerable<Book> books=null;
-            string currCategory = "";
+            var _category = category;
+            IEnumerable<Book> books = null;
+            var currCategory = "";
             if (string.IsNullOrEmpty(category))
             {
                 books = _allBooks.Books.OrderBy(i => i.Id);
@@ -48,8 +47,6 @@ namespace Shop.Controllers
                     books = _allBooks.Books.Where(i => i.Category.Name.Equals("Аудиокниги")).OrderBy(i => i.Id);
                     currCategory = "Аудиокниги";
                 }
-
-                
             }
 
             var bookObj = new BooksListViewModel
@@ -57,7 +54,7 @@ namespace Shop.Controllers
                 AllBooks = books,
                 CurrCategory = currCategory
             };
-            
+
             ViewBag.Title = "Страница с книгами";
             return View(bookObj);
         }

@@ -1,11 +1,10 @@
 ﻿using System;
-using Microsoft.AspNetCore.Mvc;
 using Shop.Data.Interfaces;
 using Shop.Data.Models;
 
 namespace Shop.Data.Repository
 {
-    public class OrdersRepository:IAllOrders
+    public class OrdersRepository : IAllOrders
     {
         private readonly AppDBContent _appDbContent;
         private readonly ShopBasket _shopBasket;
@@ -15,15 +14,16 @@ namespace Shop.Data.Repository
             _appDbContent = appDbContent;
             _shopBasket = shopBasket;
         }
+
         public void CreateOrder(Order order)
         {
-            order.OrderTime=DateTime.Now;
+            order.OrderTime = DateTime.Now;
             _appDbContent.Order.Add(order);
             _appDbContent.SaveChanges();
             var items = _shopBasket.ListShopItems;
             foreach (var el in items)
             {
-                var orderDetail=new OrderDetail()
+                var orderDetail = new OrderDetail()
                 {
                     BookID = el.Book.Id,
                     OrderID = order.Id,

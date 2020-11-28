@@ -12,5 +12,8 @@
         public bool Available { set; get; }
         public int CategoryId { set; get; }
         public virtual Category Category { set; get; }
+
+        public int AuthorId { get; set; }
+        public Author Author { get; set; }
     }
 }

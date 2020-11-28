@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+
 namespace Shop.Data.Models
 {
     public class Category

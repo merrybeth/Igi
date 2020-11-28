@@ -1,0 +1,11 @@
+﻿@model List<Author>
+
+@{
+    foreach (var author in Model)
+    {
+        <a class="nav-link" href="/Authors/@author.Id">
+            <h3>@author.Name @author.Surname</h3>
+        </a>
+    }
+    
+}

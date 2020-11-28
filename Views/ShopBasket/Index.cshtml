@@ -4,10 +4,13 @@
     @foreach (var el in Model.shopBasket.ListShopItems)
     {
         <div class="alert alert-warning mt-3">
-            <b> Книги:</b> @el.Book.Name<br />
+            <b> Книги:</b> @el.Book.Name<br/>
             <b>Цена:</b> @el.Book.Price.ToString("c")
+
+            @Html.ActionLink("Delete", "Delete", "ShopBasket", new {id = el.Book.Id}, null)
         </div>
     }
     <hr/>
     <a class="btn btn-danger" asp-controller="Order" asp-action="Checkout">Оплатить</a>
-</div>
+</div>   
+

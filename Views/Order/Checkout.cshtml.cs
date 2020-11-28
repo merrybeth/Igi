@@ -6,7 +6,6 @@ namespace Shop.Views.Order
     {
         public void OnGet()
         {
-            
         }
     }
 }

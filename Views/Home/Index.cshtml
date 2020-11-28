@@ -2,7 +2,7 @@
 <h1>Популярные книги</h1>
 <div class="row mt-5 mb-2">
     @{
-        foreach (Book book in Model.MainBooks)
+        foreach (var book in Model.MainBooks)
         {
             @Html.Partial("AllBooks", book)
         }

@@ -1,0 +1,25 @@
+﻿@model Shop.ViewModels.AuthorViewModel
+
+
+@{
+    if (Model == null)
+    {
+        <a style="font-size: xx-large">АШЫЫЫБКА ТАКОВА АФТАРА НЕТ</a>
+    }
+    else
+    {
+        <h3>@Model.Author.Name @Model.Author.Surname </h3>
+        <h4>@Model.Author.LifeDescription</h4>
+
+        if (!Model.Books.Any())
+        {
+            <a style="font-size: xx-large">в данный момент книг этого автора нет</a>
+        }
+        foreach (var book in Model.Books)
+        {
+            @Html.Partial("AllBooks", book)
+        }
+    }
+
+
+}

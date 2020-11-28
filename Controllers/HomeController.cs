@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Shop.Data.Interfaces;
 using Shop.ViewModels;
 
 namespace Shop.Controllers
 {
-    public class HomeController:Controller
+    public class HomeController : Controller
     {
         private readonly IAllBooks _bookRepository;
 

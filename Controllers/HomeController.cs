@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Shop.Data.Interfaces;
 using Shop.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Shop.Controllers
 {
@@ -13,13 +14,18 @@ namespace Shop.Controllers
             _bookRepository = bookRepository;
         }
 
-        public ViewResult Index()
+       /* public ViewResult Index()
         {
             var homeBooks = new HomeViewModel
             {
                 MainBooks = _bookRepository.GetMainBooks
             };
             return View(homeBooks);
-        }
+        }*/
+       [Authorize]
+       public IActionResult Index()
+       {
+           return Content(User.Identity.Name);
+       }
     }
 }

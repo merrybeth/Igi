@@ -9,6 +9,7 @@ using Shop.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Shop.Data.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using ShopBasket = Shop.Data.Models.ShopBasket;
 
 namespace Shop
@@ -35,6 +36,12 @@ namespace Shop
             services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(ShopBasket.GetBasket);
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options => //CookieAuthenticationOptions
+                {
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                });
+            services.AddControllersWithViews();
             services.AddMemoryCache();
             services.AddSession();
         }
@@ -52,6 +59,8 @@ namespace Shop
                 routes.MapRoute("categoryFilter", "Book/{action}/{category?}",
                     new {Controller = "Book", action = "List"});
             });
+            app.UseAuthentication();    
+            app.UseAuthorization();     
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 var content = scope.ServiceProvider.GetRequiredService<AppDBContent>();

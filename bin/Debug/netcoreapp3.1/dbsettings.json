@@ -2,5 +2,13 @@
   "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Database=shop; Uid=root; Pwd=ei7veeChu4bo!; Encrypt=true; Trusted_Connection=True;MultipleActiveResultSets=true"
 
-  }
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
 }

@@ -1,9 +1,8 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Shop.Data.Interfaces;
+using Shop.Data.Models;
 using Shop.ViewModels;
-using ShopBasket = Shop.Data.Models.ShopBasket;
-
 
 namespace Shop.Controllers
 {
@@ -36,16 +35,14 @@ namespace Shop.Controllers
 
             return RedirectToAction("Index");
         }
-        
+
         [HttpGet]
-        
-        
         public ActionResult Delete(int? Id)
         {
             var item = _bookRepository.Books.FirstOrDefault(i => i.Id == Id);
             if (item != null)
-            _shopBasket.DeleteFromBasket(item);
-           
+                _shopBasket.DeleteFromBasket(item);
+
             var items = _shopBasket.GetShopItems();
             _shopBasket.ListShopItems = items;
             var obj = new ShopBasketViwModel

@@ -1,4 +1,4 @@
-﻿using ShopBasket = Shop.Data.Models.ShopBasket;
+﻿using Shop.Data.Models;
 
 namespace Shop.ViewModels
 {

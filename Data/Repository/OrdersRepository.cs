@@ -23,7 +23,7 @@ namespace Shop.Data.Repository
             var items = _shopBasket.ListShopItems;
             foreach (var el in items)
             {
-                var orderDetail = new OrderDetail()
+                var orderDetail = new OrderDetail
                 {
                     BookID = el.Book.Id,
                     OrderID = order.Id,

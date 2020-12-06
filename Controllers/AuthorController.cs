@@ -11,40 +11,39 @@ namespace Shop.Controllers
     {
         private readonly AppDBContent _appDbContent;
 
-        
+
         public AuthorController(AppDBContent appDbContent)
         {
             _appDbContent = appDbContent;
         }
 
-        
+
         [Route("Authors")]
         public ViewResult AuthorList(List<Author> authors)
         {
-            List<Author> authorList = _appDbContent.Author.ToList();
+            var authorList = _appDbContent.Author.ToList();
 
-            
-            
+
             return View(authorList);
         }
-        
-        
+
+
         [Route("Authors/{id}")]
         public ViewResult Author(int id)
         {
             var author = _appDbContent.Author.FirstOrDefault(author => author.Id == id);
 
-            if (author!= null)
+            if (author != null)
             {
                 var Books = new AuthorViewModel
                 {
-                    Books = _appDbContent.Book.Where(book =>book.Author.Id == id),
+                    Books = _appDbContent.Book.Where(book => book.Author.Id == id),
                     Author = author
                 };
-                
+
                 return View(Books);
             }
-            
+
             return View(null);
         }
     }

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Shop.Data.Models
+﻿namespace Shop.Data.Models
 {
     public class Author
     {

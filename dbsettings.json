@@ -1,6 +1,6 @@
 ﻿{
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=shop; Uid=root; Pwd=ei7veeChu4bo!; Encrypt=true; Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=localhost;Database=shop; Uid=root; ei7veeChu4bo!; Encrypt=true; Trusted_Connection=True;MultipleActiveResultSets=true"
 
   },
   "Logging": {

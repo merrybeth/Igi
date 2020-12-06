@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Shop.Data.Models
 {
@@ -44,10 +44,7 @@ namespace Shop.Data.Models
             var abc = _appDbContent.ShopBasketItem.Where(x => x.ShopBasketId == ShopBasketId && x.Book == book)
                 .ToList();
 
-            foreach (var item in abc)
-            {
-                _appDbContent.ShopBasketItem.Remove(item);
-            }
+            foreach (var item in abc) _appDbContent.ShopBasketItem.Remove(item);
 
 
             _appDbContent.SaveChanges();

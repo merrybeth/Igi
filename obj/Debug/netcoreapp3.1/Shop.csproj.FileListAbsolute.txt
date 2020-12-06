@@ -194,3 +194,9 @@ D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.AspNet
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\edit.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\index.cshtml.g.cs
+D:\Univercity\3cours\5sem\igi\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs

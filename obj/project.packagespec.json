@@ -31,6 +31,10 @@
           "target": "Package",
           "version": "[1.0.1, )"
         },
+        "MailKit": {
+          "target": "Package",
+          "version": "[2.10.0, )"
+        },
         "Microsoft.AspNet.Mvc": {
           "target": "Package",
           "version": "[5.2.7, )"
@@ -66,6 +70,10 @@
         "Microsoft.Extensions.Caching.Memory": {
           "target": "Package",
           "version": "[5.0.0, )"
+        },
+        "MimeKit": {
+          "target": "Package",
+          "version": "[2.10.0, )"
         },
         "Pomelo.EntityFrameworkCore.MySql": {
           "target": "Package",

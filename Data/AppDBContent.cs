@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Shop.Data.Models;
-
 
 namespace Shop.Data
 {
-    public class AppDBContent : DbContext
+    public class AppDBContent : IdentityDbContext<ApplicationUser>
     {
         public AppDBContent(DbContextOptions<AppDBContent> options) : base(options)
         {
@@ -16,7 +16,5 @@ namespace Shop.Data
         public DbSet<ShopBasketItem> ShopBasketItem { get; set; }
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderDetail> OrderDetail { get; set; }
-        
-        public DbSet<User> Users { get; set; }
     }
 }

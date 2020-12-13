@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Shop.Controllers;
+using Microsoft.Extensions.Hosting;
 using Shop.Data;
 using Shop.Data.Interfaces;
 using Shop.Data.Models;
@@ -64,7 +65,7 @@ namespace Shop
             {
                 options.Cookie.HttpOnly = true;
                 options.ExpireTimeSpan = TimeSpan.FromDays(1);
-
+                options.Cookie.Domain = ".myshopproject.tk";
                 options.LoginPath = "/Account/Login";
                 options.AccessDeniedPath = "/";
                 options.SlidingExpiration = true;
@@ -79,22 +80,23 @@ namespace Shop
                     options.ClientId = Configuration["Project:GoogleClientId"];
                     options.ClientSecret = Configuration["Project:GoogleClientSecret"];
                     options.Events.OnTicketReceived += OnClientAuthenticated;
+                    options.CorrelationCookie.SameSite = SameSiteMode.Lax;
                 });
         }
 
        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //if (env.IsDevelopment())
-           // {
-           // app.UseDeveloperExceptionPage();
+            if (env.IsDevelopment())
+            {
+            app.UseDeveloperExceptionPage();
             
-          //  }
-           // else
-           // {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-           // }
+            }
+            else
+            {
+              app.UseExceptionHandler("/Home/Error");
+              app.UseHsts();
+            }
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();

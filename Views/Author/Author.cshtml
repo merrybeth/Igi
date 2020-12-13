@@ -9,7 +9,8 @@
     else
     {
         <h3>@Model.Author.Name @Model.Author.Surname </h3>
-        <h4>@Model.Author.LifeDescription</h4>
+        <h4>Дата рождения: @Model.Author.DateOfBirth Дата смерти: @Model.Author.DateOfDeath </h4>                                             
+        <h5>@Model.Author.LifeDescription</h5>
 
         if (!Model.Books.Any())
         {

@@ -25,7 +25,7 @@ namespace Shop.Data.Repository
             return _appDbContent.Book.FirstOrDefault(p => p.Id == bookId);
         }
 
-        public void SaveGame(Book book)
+        public void SaveBook(Book book)
         {
             if (book.Id == 0)
             {

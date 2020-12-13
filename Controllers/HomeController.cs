@@ -12,15 +12,7 @@ namespace Shop.Controllers
         {
             _bookRepository = bookRepository;
         }
-
-        /* public ViewResult Index()
-         {
-             var homeBooks = new HomeViewModel
-             {
-                 MainBooks = _bookRepository.GetMainBooks
-             };
-             return View(homeBooks);
-         }*/
+        
 
         public IActionResult Index()
         {
@@ -29,6 +21,10 @@ namespace Shop.Controllers
                 MainBooks = _bookRepository.GetMainBooks
             };
             return View(homeBooks);
+        }
+        public IActionResult Error()
+        {
+            return View("~/Views/Shared/Error.cshtml");
         }
     }
 }

@@ -27,6 +27,14 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
+        "Google.Apis.Auth": {
+          "target": "Package",
+          "version": "[1.49.0, )"
+        },
+        "Google.Apis.Core": {
+          "target": "Package",
+          "version": "[1.49.0, )"
+        },
         "JSON": {
           "target": "Package",
           "version": "[1.0.1, )"
@@ -38,6 +46,10 @@
         "Microsoft.AspNet.Mvc": {
           "target": "Package",
           "version": "[5.2.7, )"
+        },
+        "Microsoft.AspNetCore.Authentication.Google": {
+          "target": "Package",
+          "version": "[3.1.8, )"
         },
         "Microsoft.AspNetCore.Http.Extensions": {
           "target": "Package",
@@ -75,9 +87,17 @@
           "target": "Package",
           "version": "[2.10.0, )"
         },
+        "NLog.Web.AspNetCore": {
+          "target": "Package",
+          "version": "[4.9.3, )"
+        },
         "Pomelo.EntityFrameworkCore.MySql": {
           "target": "Package",
           "version": "[5.0.0-alpha.2, )"
+        },
+        "Serilog.AspNetCore": {
+          "target": "Package",
+          "version": "[3.4.0, )"
         }
       },
       "imports": [

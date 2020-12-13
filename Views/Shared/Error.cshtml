@@ -1,14 +1,13 @@
-﻿@model ErrorViewModel
-@{
-    ViewData["Title"] = "Error";
-}
-
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
-
-@if (Model.ShowRequestId)
-{
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
-}
+﻿<div class="form__container">
+    <div class="form">
+        <div class="form__title">Error</div>
+        <div class="form__container" style="flex-wrap: wrap">
+            <div class="form__field" style="border-top: 1px solid #dee2e6; padding-top: 20px">
+                @TempData["text_main"]
+            </div>
+            <div class="form__field">
+                @TempData["text"]
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,9 @@
 using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web;
+using Google.Apis.Util;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -7,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Shop.Controllers;
 using Shop.Data;
 using Shop.Data.Interfaces;
 using Shop.Data.Models;
@@ -16,14 +22,12 @@ namespace Shop
 {
     public class Startup
     {
-        private IConfigurationRoot _confString;
-
-        public Startup(IWebHostEnvironment hostEnvironment)
+        public Startup(IConfiguration configuration)
         {
-            _confString = new ConfigurationBuilder().SetBasePath(hostEnvironment.ContentRootPath)
-                .AddJsonFile("dbsettings.json").Build();
+            Configuration = configuration;
         }
 
+        public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
@@ -31,19 +35,17 @@ namespace Shop
             services.AddTransient<IBooksCategory, CategoryRepository>();
             services.AddTransient<IAllOrders, OrdersRepository>();
             services.AddTransient<BookRepository>();
+            services.AddTransient<EmailController>();
             services.AddDbContext<AppDBContent>(options => options.UseMySql(
-                "server=localhost;user=root;password=ei7veeChu4bo!;database=shop;",
+                Configuration.GetConnectionString("AppDbContextConnection"),
                 new MySqlServerVersion(new Version(8, 0, 22))));
             services.AddSingleton<HttpContextAccessor, HttpContextAccessor>();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(ShopBasket.GetBasket);
-
             services.AddControllersWithViews();
             services.AddMemoryCache();
 
 
-            //======
-            services.AddAntiforgery(x => x.HeaderName = "X-ANTI-FORGERY-TOKEN");
 
             services.AddSession();
 
@@ -70,11 +72,29 @@ namespace Shop
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDBContent>()
                 .AddDefaultTokenProviders();
+            
+            services.AddAuthentication()
+                .AddGoogle(options =>
+                {
+                    options.ClientId = Configuration["Project:GoogleClientId"];
+                    options.ClientSecret = Configuration["Project:GoogleClientSecret"];
+                    options.Events.OnTicketReceived += OnClientAuthenticated;
+                });
         }
 
+       
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
+            //if (env.IsDevelopment())
+           // {
+           // app.UseDeveloperExceptionPage();
+            
+          //  }
+           // else
+           // {
+                app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
+           // }
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
@@ -100,5 +120,43 @@ namespace Shop
                 DBObjects.initial(content);
             }
         }
+
+        private async Task OnClientAuthenticated(TicketReceivedContext arg)
+        {
+           
+                string email = arg.Principal.Claims.Where(c => c.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress").Select(c => c.Value).SingleOrDefault();
+
+                if (!string.IsNullOrEmpty(email))
+                {
+                    var userManager = arg.HttpContext.RequestServices.GetService<SignInManager<ApplicationUser>>();
+                    AppDBContent appDbContent =arg.HttpContext.RequestServices.GetService<AppDBContent>();
+                    if (appDbContent != null)
+                    {
+                        var user =await appDbContent.Users.Where(u => u.Email == email).FirstOrDefaultAsync();
+                        if (user ==null)
+                        {
+                           
+                            var query = HttpUtility.ParseQueryString("");
+                            query["text_main"] = "Этот аккаунт еще не был зарегистрирован";
+                            query["text"] = "Пожалуйста, пройдите регистрацию";
+                            string queryStr = query.ToString(); 
+                            arg.ReturnUri = "Error?" + queryStr ;
+                            
+                            return;             
+                        }
+
+                        if (userManager != null) await userManager.SignInAsync(user, true);
+                        else
+                        {
+                            arg.ReturnUri = "/Error";
+                            return;
+                        }
+                    }
+
+                    return;
+                }
+            return;
+        }
+
     }
 }

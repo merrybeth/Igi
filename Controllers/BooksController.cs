@@ -42,11 +42,6 @@ namespace Shop.Controllers
                     books = _allBooks.Books.Where(i => i.Category.Name.Equals("Электронные книги")).OrderBy(i => i.Id);
                     currCategory = "Электронные книги";
                 }
-                else if (string.Equals("audio", category, StringComparison.OrdinalIgnoreCase))
-                {
-                    books = _allBooks.Books.Where(i => i.Category.Name.Equals("Аудиокниги")).OrderBy(i => i.Id);
-                    currCategory = "Аудиокниги";
-                }
             }
 
             var bookObj = new BooksListViewModel
